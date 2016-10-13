@@ -1,0 +1,698 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="front-end,jiTang," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的：
+把 Photoshop 文件、图片或者线框放进一个网页；
+偶尔设计 Photoshop 文件、图片或者线框；
+用 JS 编程，为网页制作动画、过渡效果；
+用 HTML 和 CSS 编程，确定网页的内容和形式。
+
+事实上,前端工程师需要做的是：
+在设计师和工程师之间创建可视化的语言">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web前端工作的范围和误区">
+<meta property="og:url" content="http://yoursite.com/2016/09/22/web前端工作的范围和误区/index.html">
+<meta property="og:site_name" content="Zd's little box">
+<meta property="og:description" content="初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的：
+把 Photoshop 文件、图片或者线框放进一个网页；
+偶尔设计 Photoshop 文件、图片或者线框；
+用 JS 编程，为网页制作动画、过渡效果；
+用 HTML 和 CSS 编程，确定网页的内容和形式。
+
+事实上,前端工程师需要做的是：
+在设计师和工程师之间创建可视化的语言">
+<meta property="og:updated_time" content="2016-09-22T14:11:31.194Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="web前端工作的范围和误区">
+<meta name="twitter:description" content="初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的：
+把 Photoshop 文件、图片或者线框放进一个网页；
+偶尔设计 Photoshop 文件、图片或者线框；
+用 JS 编程，为网页制作动画、过渡效果；
+用 HTML 和 CSS 编程，确定网页的内容和形式。
+
+事实上,前端工程师需要做的是：
+在设计师和工程师之间创建可视化的语言">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/09/22/web前端工作的范围和误区/"/>
+
+  <title> web前端工作的范围和误区 | Zd's little box </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Zd's little box</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">放一些无聊的 有趣的 七七八八的东西</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                web前端工作的范围和误区
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-22T10:40:10+08:00" content="2016-09-22">
+              2016-09-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Front-end/" itemprop="url" rel="index">
+                    <span itemprop="name">Front-end</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Front-end/Concept/" itemprop="url" rel="index">
+                    <span itemprop="name">Concept</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h5 id="初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的："><a href="#初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的：" class="headerlink" title="初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的："></a>初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的：</h5><ol>
+<li>把 Photoshop 文件、图片或者线框放进一个网页；</li>
+<li>偶尔设计 Photoshop 文件、图片或者线框；</li>
+<li>用 JS 编程，为网页制作动画、过渡效果；</li>
+<li>用 HTML 和 CSS 编程，确定网页的内容和形式。</li>
+</ol>
+<h5 id="事实上-前端工程师需要做的是："><a href="#事实上-前端工程师需要做的是：" class="headerlink" title="事实上,前端工程师需要做的是："></a><strong>事实上</strong>,前端工程师需要做的是：</h5><ol>
+<li>在设计师和工程师之间创建可视化的语言；</li>
+<li>用可视化的设计，定义一组代表内容、品牌和功能的组件；</li>
+<li>为 Web 应用程序的公约、框架、需求、可视化的语言和规格设定底线；</li>
+<li>定义 Web 应用程序的设备、浏览器、屏幕、动画的范围；</li>
+<li>开发一个质量保证指南来确保品牌忠诚度、代码质量、产品标准；</li>
+<li>为 Web 应用程序设定适当的行距、字体、标题、图标、边距、填充等等；</li>
+<li>为 Web 应用程序设定多种分辨率的图像，设备为主的实体模型，同时维护设计指南；</li>
+<li>用 account semantics, accessibility, SEO, schemas ，microformats 标记 Web 应用程序；</li>
+<li>用一种友好的，消耗小的，设备和客户端感知的方式连接 API，获取内容；</li>
+<li>开发客户端代码来显示流畅的动画、过渡、延迟加载、交互、应用工作流程，大多数时间用来考虑渐进增强和向后兼容的标准；</li>
+<li>保证后台连接安全，采取跨地资源共享（CORS）的程序考虑，防止跨站点脚本（XSS）和跨站点请求伪造（CSRF） ；</li>
+<li>最重要的是，尽管有严格的期限、利益相关者的要求，以及设备的限制，无论现在还是将来永远是「客户第一」。</li>
+</ol>
+<h5 id="由于这种误区的存在，导致了前端市场的野蛮生长，一些不太好的前端会使用不那么聪明手段去完成需求："><a href="#由于这种误区的存在，导致了前端市场的野蛮生长，一些不太好的前端会使用不那么聪明手段去完成需求：" class="headerlink" title="由于这种误区的存在，导致了前端市场的野蛮生长，一些不太好的前端会使用不那么聪明手段去完成需求："></a>由于这种误区的存在，导致了前端市场的野蛮生长，一些不太好的前端会使用不那么聪明手段去完成需求：</h5><ol>
+<li>JavaScript 类库乱用，对 JavaScript 本身并不了解，什么地方都用 jQuery；</li>
+<li>滥用 JavaScript 插件，看都不看看就把别人的代码拿过来用，比如说；</li>
+<li>不看需求，不做任何的比较和测试，就把CSS 框架加到项目中，但只用了其中 5% 的功能；</li>
+<li>认为添加个 CSS Framework，网站就可以变成“响应式的”，或者响应式就像是一些小作料，随便就可以加入到一个网页应用中；</li>
+<li>嘴上喊着“响应式的 Web 设计”，但服务端技术一点都不懂；</li>
+<li>编写的 CSS 没有任何规范标准，不使用任何预处理器，也没有最佳实践。CSS 代码中充满了过度使用的选择器、ID、神奇的数字以及 !important；</li>
+<li>不关心代码的性能和内存泄露（什么是真正的内存泄露也不清楚）,不会对代码进行性能测试；</li>
+<li>对产品没有任何的衡量指标，或者把“在我的电脑/浏览器/移动设备上可以工作”为指标；</li>
+<li>忽视30年的软件工程实践，毫无章法的开发软件。</li>
+</ol>
+<p>如果上述那些做法全程参与到项目的构建中的话，会非常不利于项目的后期维护和性能优化，毕竟在工程角度，这些做法都是非常野蛮而不优雅的，所以市场上才会非常缺少优秀的前端。</p>
+<p><em>入门容易精通难。</em>一位优秀的前端工程师不仅要考虑web技术和语言，并且还要了解所有不同的组件、系统和概念。</p>
+<h5 id="成熟前端工程师需要具备很多的经验和实践："><a href="#成熟前端工程师需要具备很多的经验和实践：" class="headerlink" title="成熟前端工程师需要具备很多的经验和实践："></a>成熟前端工程师需要具备很多的经验和实践：</h5><p>  1.了解 DNS 解析，充分利用CDN，使用多个域名来完成资源的请求以缩短加载时间；</p>
+<ol>
+<li>设置 HTTP Headers（Expires, Cache-Control, If-Modified-Since）；</li>
+<li>遵循 Steve Souders 给出的全部规则（High Performance Websites）知道如何解决 PageSpeed、YSlow、Chrome Dev Tools Audit、Chrome Dev Tools Timeline 显示的所有问题；</li>
+<li>知道什么任务该放在服务端，什么任务该放在客户端；</li>
+<li>知道使用缓存，DNS 预取和资源预加载技巧；</li>
+<li>精通 JavaScript，知道何时自己写何时借组别人的框架或代码，优劣明辨；</li>
+<li>熟练使用现代 MVC JavaScript 框架（例如 AngularJS EmberJS React 等），图形库（D3、SnapSVG 等），DOM 操作类库（jQuery、Zepto 等），惰性加载或者模块管理类库（例如 RequireJS、CommonJS 等），任务调用工具（例如 Grunt Gulp 等），包管理工具（Bower Componentjs）以及测试工具（Protractor、Selenium 等）；</li>
+<li>掌握图片的格式，每种格式的优点，适用的场景；</li>
+<li>知道图片优化技巧以及加载策略（雪碧图、懒加载、缓存刷新以及 PNG 交错）；</li>
+<li>熟悉 CSS 标准、最新的转换工具积极策略规范（比如 BEM、SMACSS、OOCSS 等）；</li>
+<li>JavaScript 的计算机科学（内存管理、单进程特性、垃圾回收算法、定时器、作用域、提升以及设计模式）。</li>
+</ol>
+<blockquote>
+<p>部分内容来源于<a href="https://zhuanlan.zhihu.com/p/20598089" target="_blank" rel="external">知乎</a></p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/front-end/" rel="tag">#front-end</a>
+          
+            <a href="/tags/jiTang/" rel="tag">#jiTang</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/22/Git远程仓库设置方法/" rel="next" title="Git远程仓库设置方法">
+                <i class="fa fa-chevron-left"></i> Git远程仓库设置方法
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/14/webpack-简易教程/" rel="prev" title="webpack 简易教程">
+                webpack 简易教程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/bakeneko.jpg"
+               alt="zhangDand" />
+          <p class="site-author-name" itemprop="name">zhangDand</p>
+          <p class="site-description motion-element" itemprop="description">七七八八</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zhangDand" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://zhangdand.github.io/dan_demo/resume/dan_resume.html" target="_blank" title="Resume">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Resume
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的："><span class="nav-number">1.</span> <span class="nav-text">初学者总是对前端有一定的误区，认为前端开发是一个「相对于其他技术来说更简单的技术」，在他们心中前端工程师式这样工作的：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#事实上-前端工程师需要做的是："><span class="nav-number">2.</span> <span class="nav-text">事实上,前端工程师需要做的是：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#由于这种误区的存在，导致了前端市场的野蛮生长，一些不太好的前端会使用不那么聪明手段去完成需求："><span class="nav-number">3.</span> <span class="nav-text">由于这种误区的存在，导致了前端市场的野蛮生长，一些不太好的前端会使用不那么聪明手段去完成需求：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#成熟前端工程师需要具备很多的经验和实践："><span class="nav-number">4.</span> <span class="nav-text">成熟前端工程师需要具备很多的经验和实践：</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zhangDand</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
