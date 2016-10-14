@@ -378,7 +378,7 @@ webpack app/main.js public/bundle.js
 </code></pre><p>需要指定一个入口文件，webpack将自动识别项目所依赖的其他文件，不过需要注意的是如果你的webpack没有进行全局安装，那么当你在终端中使用此命令时，需要额外指定其在node_modules中的地址，继续上面的例子，在终端中属于如下命令:</p>
 <pre><code>//webpack非全局安装的情况
 node_modules/.bin/webpack app/main.js public/bundle.js
-</code></pre><p>##通过配置文件来使用webpack<br>Webpack拥有很多其它的比较高级的功能（比如说本文后面会介绍的loaders和plugins），这些功能其实都可以通过命令行模式实现，但是正如已经提到的，这样不太方便且容易出错的，一个更好的办法是定义一个配置文件，这个配置文件其实也是一个简单的JavaScript模块，可以把所有的与构建相关的信息放在里面。</p>
+</code></pre><h2 id="通过配置文件来使用webpack"><a href="#通过配置文件来使用webpack" class="headerlink" title="通过配置文件来使用webpack"></a>通过配置文件来使用webpack</h2><p>Webpack拥有很多其它的比较高级的功能（比如说本文后面会介绍的loaders和plugins），这些功能其实都可以通过命令行模式实现，但是正如已经提到的，这样不太方便且容易出错的，一个更好的办法是定义一个配置文件，这个配置文件其实也是一个简单的JavaScript模块，可以把所有的与构建相关的信息放在里面。</p>
 <p>还是继续上面的例子来说明如何写这个配置文件，在当前练习文件夹的根目录下新建一个名为webpack.config.js的文件，并在其中进行最最简单的配置，如下所示，它包含入口文件路径和存放打包后文件的地方的路径。</p>
 <pre><code>module.exports = {
   entry:  __dirname + &quot;/app/main.js&quot;,//已多次提及的唯一入口文件
