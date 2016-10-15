@@ -399,7 +399,7 @@ bundle2.js  1.74 kB       0  [emitted]  main
    [0] ./app/main.js 107 bytes {0} [built]
    [1] ./app/Greeter.js 161 bytes {0} [built]
 </code></pre><p>当然，webpack也有办法连webpack这条命令都不用。</p>
-<p>##更快捷的执行打包任务<br>执行类似于<code>node_modules/.bin/webpack</code>这样的命令其实是比较烦人且容易出错的，不过值得庆幸的是npm可以引导任务执行，对其进行配置后可以使用简单的npm start命令来代替这些繁琐的命令。在package.json中对npm的脚本部分进行相关设置即可，设置方法如下。</p>
+<h2 id="更快捷的执行打包任务"><a href="#更快捷的执行打包任务" class="headerlink" title="更快捷的执行打包任务"></a>更快捷的执行打包任务</h2><p>执行类似于<code>node_modules/.bin/webpack</code>这样的命令其实是比较烦人且容易出错的，不过值得庆幸的是npm可以引导任务执行，对其进行配置后可以使用简单的npm start命令来代替这些繁琐的命令。在package.json中对npm的脚本部分进行相关设置即可，设置方法如下。</p>
 <pre><code>{
   &quot;name&quot;: &quot;webpack-sample-project&quot;,
   &quot;version&quot;: &quot;1.0.0&quot;,
